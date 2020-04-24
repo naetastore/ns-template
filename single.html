@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="main-menu navbar navbar-expand navbar-light un-text-d_">
+        <a aria-current="page" class="nav-link" classactive="active" href="./index.html">
+            <img src="./img/svg/home-menu-icon.svg" alt="menu-icon" class="menu-icon">
+        </a>
+        <a aria-current="page" class="nav-link" classactive="active" href="./product.html">
+            <img src="./img/svg/product-menu-icon.svg" alt="menu-icon" class="menu-icon">
+        </a>
+        <a aria-current="page" class="nav-link" classactive="active" href="./search.html">
+            <img src="./img/svg/search-menu-icon.svg" alt="menu-icon" class="menu-icon">
+        </a>
+        <a aria-current="page" class="nav-link nav-account" classactive="active" href="./myprofile.html">
+            <img src="./img/svg/account-menu-icon.svg" alt="menu-icon" class="menu-icon menu-account">
+        </a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="product-item">
+                    <div class="img">
+                        <img src="./img/product/GAMIS_SYARI_MUSLIM_BUTTERFLY_set_BAHAN_CREPE_ORI_ALFASHION_MURAH.jpg"
+                            alt="product">
+                    </div>
+                    <div class="body">
+                        <div class="title">
+                            GAMIS SYARI MUSLIM BUTTERFLY set BAHAN CREPE ORI ALFASHION MURAH
+                        </div>
+                        <div class="desc">undescription</div>
+                        <div class="price">Rp. 49.000</div>
+                    </div>
+                </div>
+                <div class="product-footer float-right">
+                    <button type="button" class="btn primary">
+                        <div class="btn ml-0">
+                            <img src="./img/svg/plus-cyan-icon.svg" alt="plus-icon" class="icon">
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script>
+        $(function () {
+            $('button').on('click', function () {
+                document.location.href = './troley.html';
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="main-menu navbar navbar-expand navbar-light un-text-d_">
+        <a aria-current="page" class="nav-link" classactive="active" href="./index.html">
+            <img src="./img/svg/home-menu-icon.svg" alt="menu-icon" class="menu-icon">
+        </a>
+        <a aria-current="page" class="nav-link" classactive="active" href="./product.html">
+            <img src="./img/svg/product-menu-icon.svg" alt="menu-icon" class="menu-icon">
+        </a>
+        <a aria-current="page" class="nav-link" classactive="active" href="./search.html">
+            <img src="./img/svg/search-menu-icon.svg" alt="menu-icon" class="menu-icon">
+        </a>
+        <a aria-current="page" class="nav-link active nav-account" classactive="active" href="./myprofile.html">
+            <img src="./img/svg/account-menu-icon.svg" alt="menu-icon" class="menu-icon menu-account">
+        </a>
+    </nav>
+
+    <div class="header-account">
+        <div class="account">
+            <img src="./img/svg/account-menu-icon.svg" alt="avatar" class="avatar">
+            <div class="user-info mt-2">
+                <div class="name">Andi Jatmiko</div>
+            </div>
+        </div>
+        <div class="tabs un-text-d_">
+            <a classactive="active" href="./myprofile.html">Akun</a>
+            <a href="./order.html" classactive="active">Order</a>
+            <a aria-current="page" class="active" href="./notification.html" classactive="active">Notifikasi</a>
+            <a href="./settings.html" classactive="active">Setelan</a>
+        </div>
+    </div>
+
+    <div class="account-body">
+        <div class="notifications">
+            <div class="details">
+                <div class="subject">Pesanan berhasil kami unggah</div>
+                <div class="message">Kami meninjau dan mengirimi pemberitahuan pesan melalui Nomor berikut 088276672905
+                    pastikan Nomor tersebut Aktif.</div>
+                <div class="time">6 detik yang lalu</div>
+                <div class="action">
+                    <span class="delete">Hapus</span>
+                    <span class="go-back">Kembali</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script>
+        $(function () {
+            $('.go-back').on('click', function () {
+                document.location.href = './notification.html';
+            });
+        });
+    </script>
+</body>
+
+</html>
